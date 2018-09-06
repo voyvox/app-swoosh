@@ -18,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-BZ-D22">
-                                <rect key="frame" x="-19.5" y="0.0" width="414" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-BZ-D22">
+                                <rect key="frame" x="-19.5" y="-69" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fAc-oL-RzR">
                                 <rect key="frame" x="87" y="41" width="201" height="20"/>
@@ -57,13 +58,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="a1j-BZ-D22" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XdK-R1-79m"/>
-                            <constraint firstItem="a1j-BZ-D22" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kPT-9N-Cem"/>
-                            <constraint firstItem="a1j-BZ-D22" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ywv-5S-c59"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bgImg" destination="a1j-BZ-D22" id="JxK-K3-m1G"/>
+                        <outlet property="swoosh" destination="fAc-oL-RzR" id="Aal-NI-WEM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
