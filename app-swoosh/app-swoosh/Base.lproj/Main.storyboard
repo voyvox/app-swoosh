@@ -51,6 +51,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="0.9941860465116279" green="0.98837209302325579" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="nhW-1F-1t7" kind="show" id="hGx-Hc-ZD9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCF-9H-Q7j">
                                 <rect key="frame" x="60" y="175" width="254.5" height="36"/>
@@ -96,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="utL-ow-b6p">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-dX-Ynk">
                                 <rect key="frame" x="0.0" y="60" width="375" height="105"/>
@@ -171,25 +174,35 @@
                                     <constraint firstAttribute="width" constant="260" id="XEg-dU-1rz"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKf-Jo-Lux">
+                                <rect key="frame" x="10" y="30" width="29" height="24"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="4wg-nv-vni" kind="unwind" unwindAction="unWindFromSkillVCWithUnwindSegue:" id="rn9-Io-SC8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VlO-0l-SMY" firstAttribute="bottom" secondItem="kso-wU-Efj" secondAttribute="bottom" constant="60" id="4Dn-va-aBo"/>
                             <constraint firstItem="GHR-dX-Ynk" firstAttribute="leading" secondItem="VlO-0l-SMY" secondAttribute="leading" id="9ka-zA-hJt"/>
                             <constraint firstItem="kso-wU-Efj" firstAttribute="centerX" secondItem="g8y-rG-Adu" secondAttribute="centerX" id="D8e-qq-3Li"/>
-                            <constraint firstItem="utL-ow-b6p" firstAttribute="top" secondItem="VlO-0l-SMY" secondAttribute="top" id="LGW-2y-CSg"/>
+                            <constraint firstItem="utL-ow-b6p" firstAttribute="top" secondItem="g8y-rG-Adu" secondAttribute="top" id="LGW-2y-CSg"/>
                             <constraint firstItem="utL-ow-b6p" firstAttribute="trailing" secondItem="VlO-0l-SMY" secondAttribute="trailing" id="TcQ-l8-1Je"/>
+                            <constraint firstItem="rKf-Jo-Lux" firstAttribute="top" secondItem="VlO-0l-SMY" secondAttribute="top" constant="10" id="UQT-Jw-TxY"/>
                             <constraint firstItem="utL-ow-b6p" firstAttribute="bottom" secondItem="VlO-0l-SMY" secondAttribute="bottom" id="Xjz-Jn-Lt4"/>
                             <constraint firstItem="VlO-0l-SMY" firstAttribute="trailing" secondItem="GHR-dX-Ynk" secondAttribute="trailing" id="dPD-Ud-24V"/>
                             <constraint firstItem="7lp-AW-jN6" firstAttribute="top" secondItem="Pqc-He-ePP" secondAttribute="bottom" constant="87" id="fAZ-Ml-Dkm"/>
                             <constraint firstItem="GHR-dX-Ynk" firstAttribute="top" secondItem="VlO-0l-SMY" secondAttribute="top" constant="40" id="hIt-oL-kpR"/>
                             <constraint firstItem="utL-ow-b6p" firstAttribute="leading" secondItem="VlO-0l-SMY" secondAttribute="leading" id="nuB-cs-6Wf"/>
+                            <constraint firstItem="rKf-Jo-Lux" firstAttribute="leading" secondItem="VlO-0l-SMY" secondAttribute="leading" constant="10" id="ww8-Kt-bJV"/>
                             <constraint firstItem="7lp-AW-jN6" firstAttribute="centerX" secondItem="g8y-rG-Adu" secondAttribute="centerX" id="yCr-Au-PLV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VlO-0l-SMY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fK0-wI-30d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4wg-nv-vni" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="965.60000000000002" y="133.5832083958021"/>
         </scene>
@@ -202,7 +215,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="EYz-Fk-dvS">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="szt-kh-305">
                                 <rect key="frame" x="0.0" y="60" width="375" height="105"/>
@@ -276,7 +289,7 @@
                             <constraint firstItem="5e8-Ug-8HR" firstAttribute="bottom" secondItem="seb-Xd-VBA" secondAttribute="bottom" constant="60" id="LVV-QJ-9TJ"/>
                             <constraint firstItem="szt-kh-305" firstAttribute="leading" secondItem="5e8-Ug-8HR" secondAttribute="leading" id="LfP-dd-1Gh"/>
                             <constraint firstItem="5e8-Ug-8HR" firstAttribute="trailing" secondItem="szt-kh-305" secondAttribute="trailing" id="OMH-5b-YDz"/>
-                            <constraint firstItem="EYz-Fk-dvS" firstAttribute="top" secondItem="5e8-Ug-8HR" secondAttribute="top" id="PzH-hT-pGI"/>
+                            <constraint firstItem="EYz-Fk-dvS" firstAttribute="top" secondItem="O99-B5-VJQ" secondAttribute="top" id="PzH-hT-pGI"/>
                             <constraint firstItem="seb-Xd-VBA" firstAttribute="centerX" secondItem="O99-B5-VJQ" secondAttribute="centerX" id="RwO-aB-zYw"/>
                             <constraint firstItem="leZ-j9-HRK" firstAttribute="centerX" secondItem="O99-B5-VJQ" secondAttribute="centerX" id="X6b-3V-BG7"/>
                             <constraint firstItem="szt-kh-305" firstAttribute="top" secondItem="5e8-Ug-8HR" secondAttribute="top" constant="40" id="b9M-pC-6n2"/>
@@ -292,6 +305,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
