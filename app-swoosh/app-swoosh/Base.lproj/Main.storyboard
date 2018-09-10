@@ -187,7 +187,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKf-Jo-Lux">
-                                <rect key="frame" x="10" y="30" width="29" height="24"/>
+                                <rect key="frame" x="19.5" y="30" width="29" height="24"/>
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <segue destination="4wg-nv-vni" kind="unwind" unwindAction="unWindFromSkillVCWithUnwindSegue:" id="rn9-Io-SC8"/>
@@ -207,7 +207,7 @@
                             <constraint firstItem="7lp-AW-jN6" firstAttribute="top" secondItem="Pqc-He-ePP" secondAttribute="bottom" constant="87" id="fAZ-Ml-Dkm"/>
                             <constraint firstItem="GHR-dX-Ynk" firstAttribute="top" secondItem="VlO-0l-SMY" secondAttribute="top" constant="40" id="hIt-oL-kpR"/>
                             <constraint firstItem="utL-ow-b6p" firstAttribute="leading" secondItem="VlO-0l-SMY" secondAttribute="leading" id="nuB-cs-6Wf"/>
-                            <constraint firstItem="rKf-Jo-Lux" firstAttribute="leading" secondItem="VlO-0l-SMY" secondAttribute="leading" constant="10" id="ww8-Kt-bJV"/>
+                            <constraint firstItem="rKf-Jo-Lux" firstAttribute="leading" secondItem="VlO-0l-SMY" secondAttribute="leading" constant="20" id="ww8-Kt-bJV"/>
                             <constraint firstItem="7lp-AW-jN6" firstAttribute="centerX" secondItem="g8y-rG-Adu" secondAttribute="centerX" id="yCr-Au-PLV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VlO-0l-SMY"/>
